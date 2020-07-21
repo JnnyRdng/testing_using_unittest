@@ -19,3 +19,8 @@ class TestCalculator(unittest.TestCase):
         actual = divide(21, 7)
         self.assertEqual(expected, actual)
 
+    def test_multiply(self):
+        # test multiply
+        expected = 12
+        actual = multiply(3, 4)
+        self.assertEqual(expected, actual)

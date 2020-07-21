@@ -24,3 +24,14 @@ class TestCalculator(unittest.TestCase):
         expected = 12
         actual = multiply(3, 4)
         self.assertEqual(expected, actual)
+
+    # integration
+    def test_more_than_one_operation(self):
+        # test mutiple functions producing a single output
+        expected = 49
+        num_1 = add(4, 3)
+        num_2 = subtract(9, 2)
+        actual = multiply(num_1, num_2)
+        self.assertEqual(expected, actual)
+
+    

@@ -1,11 +1,13 @@
 import unittest
 from src.calculator import add, divide, multiply, subtract
 
+
 class TestCalculator(unittest.TestCase):
-    
     def test_add(self):
         # test that the add() function in calculator produces the correct results
-        self.assertEqual(7, add(2, 5))
+        expected = 7
+        actual = add(2, 5)
+        self.assertEqual(expected, actual)
 
     def test_subtract(self):
         # test that the subtract() function performs as expected
@@ -34,4 +36,3 @@ class TestCalculator(unittest.TestCase):
         actual = multiply(num_1, num_2)
         self.assertEqual(expected, actual)
 
-    
